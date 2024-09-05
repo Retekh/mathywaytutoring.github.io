@@ -114,6 +114,7 @@ nav ul li a:hover {
     font-family: 'Abel', sans-serif;
     font-weight: 100;
     font-size: 3em;
+    text-align: center;
 }
 
 .hero .cta {
@@ -126,6 +127,8 @@ nav ul li a:hover {
     text-decoration: none;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    text-align: center;
 
 }
 
@@ -290,6 +293,15 @@ footer p {
     }
     section {
         padding: 30px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero .cta {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
