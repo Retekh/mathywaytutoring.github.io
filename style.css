@@ -1,5 +1,11 @@
 /* General Styles */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color-one: rgba(191, 73, 106, 1);
     --color-two: #DB92A1;
@@ -54,6 +60,7 @@ header p {
     cursor: pointer;
     right: 1em; /* Align 1em from the right */
     top: 50%;  /* Move to the middle of the header */
+    opacity: 1;
 }
 
 .hamburger span {
@@ -62,6 +69,8 @@ header p {
     background: white;
     margin: 4px;
     transition: all 0.3s ease;
+    opacity: 1;
+
 }
 
 nav ul {
@@ -198,7 +207,7 @@ section p {
     position: relative;    
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */    
     height: 0;    
-    width: 75%; /* Width of the video wrapper */    
+    width: 70%; /* Width of the video wrapper */    
     margin: 0 auto; /* This centers the element horizontally */    
     background-color: #000;
 }
@@ -259,6 +268,7 @@ footer p {
 
     nav ul {
         position: absolute;
+        z-index: 2;
         top: 5em;
         left: 0;
         width: 100%;
@@ -277,6 +287,9 @@ footer p {
     nav ul.showNav {
         transform: translateY(0);
         visibility: visible;
+    }
+    section {
+        padding: 30px;
     }
 }
 
